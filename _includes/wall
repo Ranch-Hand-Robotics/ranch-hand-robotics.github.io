@@ -1,0 +1,35 @@
+{% if include.id %}
+  {% assign wall = page[include.id] %}
+{% else %}
+  {% assign wall = page.wall %}
+{% endif %}
+
+{% if include.layout %}
+  {% assign wall_layout = include.layout %}
+{% else %}
+  {% if wall.size == 2 %}
+    {% assign wall_layout = 'half' %}
+  {% elsif wall.size >= 3 %}
+    {% assign wall_layout = 'third' %}
+  {% else %}
+    {% assign wall_layout = '' %}
+  {% endif %}
+{% endif %}
+
+<figure class="wall_figure {{ wall_layout }} {{ include.class }}">
+  {% for img in wall %}
+  <a href="{{ img.url | relative_url }}"
+  {% if img.url %}
+        {% if img.title %}title="{{ img.title }}"{% endif %}>
+          <img src="{{ img.image_path | relative_url }}"
+               alt="{% if img.alt %}{{ img.alt }}{% endif %}">
+    {% else %}
+      <img src="{{ img.image_path | relative_url }}"
+           alt="{% if img.alt %}{{ img.alt }}{% endif %}">
+    {% endif %}
+    {% if img.caption %}
+      <span class="wall_caption">{{img.caption | markdownify | remove: "<p>" | remove: "</p>" }}</span>
+    {% endif %}
+  </a>
+  {% endfor %}
+</figure>
