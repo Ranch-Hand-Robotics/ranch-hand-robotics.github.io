@@ -18,13 +18,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Ranch Hand Robotics
+title: Ranch Hand Robotics, LLC
 email: info@ranchhandrobotics.com
 description: >- # this means to ignore newlines until "baseurl:"
   Wrangle your robots with Ranch Hand Robotics.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.ranchhandrobotics.com" # the base hostname & protocol for your site, e.g. http://example.com
-footer: "© 2024 Ranch Hand Robotics"
+footer: "© 2025 Ranch Hand Robotics, LLC"
 head_scripts: []
 footer_scripts: []
 
