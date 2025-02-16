@@ -4,22 +4,19 @@ classes:
   - landing
   - dark-theme
 
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 software_features:
-  - url: https://github.com/ranchhandrobotics/rde-urdf
-    image_path: /assets/images/rhr_rde_urdf.jpg
-    alt: "URDF Editor"
-    btn_label : "URDF Editor"
   - url: https://github.com/ranchhandrobotics/rde-ros-2
     image_path: /assets/images/rhr_rde_ros_2.jpg
-    alt: "Debugging  Tools for ROS 2"
-    btn_label : "Debugger for ROS 2"
+    alt: "Debugging Tools for ROS 2"
+    btn_label : "Tools and Debugger for ROS 2"
   - url: https://github.com/ranchhandrobotics/rde-ros-1
     image_path: /assets/images/rhr_rde_ros_1.jpg
     alt: "Debugging Tools for ROS 1"
-    btn_label: "Debugger for ROS 1"
+    btn_label: "Tools and Debugger for ROS 1"
+  - url: https://github.com/ranchhandrobotics/rde-urdf
+    image_path: /assets/images/rhr_rde_urdf.jpg
+    alt: "URDF Editor"
+    btn_label : "Unified Robot Description Format (URDF) Editor"
 
 hardware_features:
   - url: ./sheepdog.html
@@ -43,14 +40,14 @@ support_features:
   - url: ./ai_groundstation.html
     image_path: /assets/images/decentralized_neon.jpg
     alt: "AI Ground Station"
-    btn_label : "AI Ground Station"
+    btn_label : "AI Ground Control Station"
 
 ---
 Ranch Hand Robotics delivers Developer tools and solutions for building Robots, with a special emphasis on Robots for Farms, Fields and Forests.
 
 <div class="feature_row">
-  <h2>Robotics Development Environment</h2>
-  Robotics Developer Tools for Visual Studio Code. The RDE is a collection of tools for developing robotics software.  The RDE includes tools for developing URDF files, debugging ROS 1 and ROS 2 nodes, and more.
+  <h2>Robotics Development Extensions</h2>
+  Robotics Developer Extensions (RDE) are collection of tools for Visual Studio code to assist in developing robotics software.
 
   {% include feature_row id="software_features" %}
 </div>
@@ -58,13 +55,15 @@ Ranch Hand Robotics delivers Developer tools and solutions for building Robots, 
 
 <div class="feature_row">
   <h2>Robotics Hardware</h2>
-  Plans and components for building robots for farms, fields and forests.  The Ranch Hand Robotics hardware is designed to be easy to build, customize and repair.
+  Plans and components for building robots for farms, fields and forests.  The Ranch Hand Robotics hardware is designed to be easy to build, customize and repair. ![coming soon](https://img.shields.io/badge/coming_soon "Coming Soon"] 
 
   {% include feature_row id="hardware_features" %}
 </div>
 
 <div class="feature_row">
   <h2>Robotics Support Software</h2>
+  Edge Native Software runtimes to help you communicate with and manage your robots. ![coming soon](https://img.shields.io/badge/coming_soon "Coming Soon"]
+  
   {% include feature_row id="support_features" %}
 </div>
 
