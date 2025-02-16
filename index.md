@@ -46,7 +46,7 @@ support_features:
 Ranch Hand Robotics delivers Developer tools and solutions for building Robots, with a special emphasis on Robots for Farms, Fields and Forests.
 
 <div class="feature_row">
-  <h2>Robotics Development Extensions</h2>
+  <h2>Robotics Developer Extensions</h2>
   Robotics Developer Extensions (RDE) are collection of tools for Visual Studio code to assist in developing robotics software.
 
   {% include feature_row id="software_features" %}

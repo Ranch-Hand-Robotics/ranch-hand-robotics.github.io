@@ -11,3 +11,9 @@
 .page__content {
   margin-top: 1em;
 }
+
+.site-logo img {
+  max-width: 150px; /* Adjust this value */
+  height: auto;
+  max-height: 5rem;
+}
