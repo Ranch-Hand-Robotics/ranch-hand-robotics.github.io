@@ -38,9 +38,7 @@ minimal_mistakes_skin: "dark"
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
-  - jekyll-feed
   - jekyll-sitemap
-  - jekyll-feed
   - jemoji
   - jekyll-git-metadata
   - jekyll-mentions
@@ -90,7 +88,6 @@ whitelist:
   - jekyll-remote-theme
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-feed
   - jemoji
   - jekyll-git-metadata
   - jekyll-mentions
