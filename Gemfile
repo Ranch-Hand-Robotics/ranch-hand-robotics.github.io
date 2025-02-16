@@ -14,26 +14,7 @@ gem "minimal-mistakes-jekyll"
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 gem "github-pages", "~> 228", group: :jekyll_plugins
-# If you have any plugins, put them here!
-group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.12"
-  gem "jekyll-remote-theme", "~> 0.4.3"
-  gem "jekyll-sitemap"
-  gem "jekyll-paginate"
-  gem "jekyll-seo-tag"
-  gem "jekyll-redirect-from"
-  gem "jekyll-archives"
-  gem "jekyll-include-cache"
-  gem "jekyll-optional-front-matter"
-  gem "jekyll-default-layout"
-  gem "jekyll-readme-index"
-  gem "jekyll-toc"
-  gem "jekyll-mentions"
-  gem "jekyll-avatar"
-  gem "jemoji"
-  gem "jekyll-github_metadata"
-  gem 'jekyll-sass-converter'
-  end
+gem 'jekyll-include-cache'
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
