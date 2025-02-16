@@ -1,0 +1,13 @@
+---
+---
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes";
+
+.feature__wrapper {
+  margin-top: 3em;
+  border-bottom: 0px;
+}
+
+.page__content {
+  margin-top: 1em;
+}
