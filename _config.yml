@@ -45,6 +45,7 @@ plugins:
   - jekyll-optional-front-matter
   - jekyll-paginate
   - jekyll-sass-converter
+  - jekyll-include-cache
 
 repository: ranchhandrobotics/ranchhandrobotics.github.io
 
@@ -94,7 +95,7 @@ whitelist:
   - jekyll-optional-front-matter
   - jekyll-paginate
   - jekyll-sass-converter
-
+  - jekyll-include-cache
 
 
 
