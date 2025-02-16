@@ -31,7 +31,7 @@ group :jekyll_plugins do
   gem "jekyll-mentions"
   gem "jekyll-avatar"
   gem "jemoji"
-  gem "jekyll-git_metadata"
+  gem "jekyll-github_metadata"
   gem 'jekyll-sass-converter'
   end
 
