@@ -5,7 +5,7 @@ classes:
   - dark-theme
 ---
 
-Sheepdog is a small wheeled robot designed to work in outdoor environment or confined indoor environments. 
+Sheepdog is an Open-Source small wheeled robot designed to work in outdoor environments or confined indoor environments. 
 
 Features:
 - Operate as a remote control robot, or as an autonomous robot.
@@ -15,6 +15,9 @@ Features:
 - Communicate with other robots and share its understanding of the environment and coordinate operations.
 - Built in GPS and optical positioning.
 - Wireless Charging with docking station.
+- Safety features include emergency stop, obstacle avoidance, and remote monitoring.
+- Add an extendable arm for light lifting tasks.
+- Implement a user-friendly interface for easy operation and monitoring of robot tasks.
 
 >NOTE: Coming soon, the Sheepdog is currently in development.
 

@@ -5,15 +5,15 @@ classes:
   - dark-theme
 
 software_features:
-  - url: https://github.com/ranchhandrobotics/rde-ros-2
+  - url: https://ranchhandrobotics.com/rde-ros-1
     image_path: /assets/images/rhr_rde_ros_2.jpg
     alt: "Debugging Tools for ROS 2"
     btn_label : "Tools and Debugger for ROS 2"
-  - url: https://github.com/ranchhandrobotics/rde-ros-1
+  - url: https://ranchhandrobotics.com/rde-ros-2
     image_path: /assets/images/rhr_rde_ros_1.jpg
     alt: "Debugging Tools for ROS 1"
     btn_label: "Tools and Debugger for ROS 1"
-  - url: https://github.com/ranchhandrobotics/rde-urdf
+  - url: https://ranchhandrobotics.com/rde-urdf
     image_path: /assets/images/rhr_rde_urdf.jpg
     alt: "URDF Editor"
     btn_label : "Unified Robot Description Format (URDF) Editor"
