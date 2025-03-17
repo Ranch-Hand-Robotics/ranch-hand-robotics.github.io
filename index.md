@@ -53,7 +53,8 @@ Ranch Hand Robotics delivers Developer tools and solutions for building Robots, 
 </div>
 
 
-<div class="feature_row">
+<!-- Coming soon -->
+<!-- div class="feature_row">
   <h2>Robotics Hardware</h2>
   Plans and components for building robots for farms, fields and forests.  The Ranch Hand Robotics hardware is designed to be easy to build, customize and repair. 
 
@@ -65,5 +66,5 @@ Ranch Hand Robotics delivers Developer tools and solutions for building Robots, 
   Edge Native Software runtimes to help you communicate with and manage your robots.
   
   {% include feature_row id="support_features" %}
-</div>
+</div -->
 
