@@ -1,22 +1,39 @@
 ---
 layout: splash
-classes:
-  - landing
-  - dark-theme
+title: "Ranch Hand Robotics"
+excerpt: "Developer tools and solutions for building Robots, with a special emphasis on Robots for Farms, Fields and Forests."
+header:
+  overlay_color: "transparent"
+  overlay_filter: "0.2"
+  overlay_image: /assets/images/rhr_logo.png
 
 software_features:
   - url: https://ranchhandrobotics.com/rde-ros-2
     image_path: /assets/images/rhr_rde_ros_2.jpg
     alt: "Debugging Tools for ROS 2"
     btn_label : "Tools and Debugger for ROS 2"
+    excerpt: "Advanced debugging and development tools for ROS 2 applications"
   - url: https://ranchhandrobotics.com/rde-ros-1
     image_path: /assets/images/rhr_rde_ros_1.jpg
     alt: "Debugging Tools for ROS 1"
     btn_label: "Tools and Debugger for ROS 1"
+    excerpt: "Comprehensive debugging suite for legacy ROS 1 systems"
   - url: https://ranchhandrobotics.com/rde-urdf
     image_path: /assets/images/rhr_rde_urdf.jpg
     alt: "URDF Editor"
-    btn_label : "Unified Robot Description Format (URDF) Editor"
+    btn_label : "Unified Robot Description Format (URDF) / Xacro / OpenSCAD Editor"
+    excerpt: "Visual editor for robot description files and 3D modeling"
+  - url: https://ranchhandrobotics.com/rde-creator
+    image_path: /assets/images/rhr_creator.jpg
+    alt: "Package Creator for ROS 2"
+    btn_label : "Package Creator for ROS 2"
+    excerpt: "Automated package generation and project scaffolding"
+  - url: https://ranchhandrobotics.com/babylon_ros
+    image_path: /assets/images/babymule.png
+    alt: "Render ROS 2 Robots using the Babylon.js 3D engine"
+    btn_label : "BabylonJS renderer for ROS 2 URDF/Xacro"
+    excerpt: "High-performance 3D visualization for robotics applications"
+
 
 hardware_features:
   - url: ./sheepdog.html
@@ -37,34 +54,22 @@ support_features:
     image_path: /assets/images/decentralized_bots.jpg
     alt: "Decentralized Robotics"
     btn_label : "Decentralized Robotics"
+    excerpt: "Distributed Robot Monitoring and Control"
   - url: ./ai_groundstation.html
     image_path: /assets/images/decentralized_neon.jpg
     alt: "AI Ground Station"
     btn_label : "AI Ground Control Station"
+    excerpt: "Intelligent mission control and robot fleet management"
 
 ---
-Ranch Hand Robotics delivers Developer tools and solutions for building Robots, with a special emphasis on Robots for Farms, Fields and Forests.
 
-<div class="feature_row">
-  <h2>Robotics Developer Extensions</h2>
-  Robotics Developer Extensions (RDE) are collection of tools for Visual Studio code to assist in developing robotics software.
+## Robotics Developer Extensions
 
-  {% include feature_row id="software_features" %}
-</div>
+**Robotics Developer Extensions (RDE)** are a comprehensive collection of AI enabled tools for Visual Studio Code and Cursor, designed to streamline robotics software development.
+
+{% include feature_row id="software_features" %}
+
+<div style="margin-top: 60px;"></div>
 
 
-<!-- Coming soon -->
-<!-- div class="feature_row">
-  <h2>Robotics Hardware</h2>
-  Plans and components for building robots for farms, fields and forests.  The Ranch Hand Robotics hardware is designed to be easy to build, customize and repair. 
-
-  {% include feature_row id="hardware_features" %}
-</div>
-
-<div class="feature_row">
-  <h2>Robotics Support Software</h2>
-  Edge Native Software runtimes to help you communicate with and manage your robots.
-  
-  {% include feature_row id="support_features" %}
-</div -->
 
