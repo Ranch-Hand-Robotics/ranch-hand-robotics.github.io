@@ -61,6 +61,13 @@ support_features:
     btn_label : "AI Ground Control Station"
     excerpt: "Intelligent mission control and robot fleet management"
 
+library_features:
+  - url: https://github.com/Ranch-Hand-Robotics/IsoGridScad
+    image_path: /assets/images/isogrid_glowing.jpg
+    alt: "IsoGridScad OpenSCAD Library"
+    btn_label : "IsoGridScad"
+    excerpt: "OpenSCAD library for generating Isogrid structures in 3D printed projects"
+
 ---
 
 ## Robotics Developer Extensions
@@ -68,6 +75,14 @@ support_features:
 **Robotics Developer Extensions (RDE)** are a comprehensive collection of AI enabled tools for Visual Studio Code and Cursor, designed to streamline robotics software development.
 
 {% include feature_row id="software_features" %}
+
+<div style="margin-top: 60px;"></div>
+
+## Libraries
+
+**Open-source libraries** for robotics and 3D printing, designed to enhance your projects with advanced structural designs.
+
+{% include feature_row id="library_features" %}
 
 <div style="margin-top: 60px;"></div>
 
