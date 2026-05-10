@@ -1,9 +1,10 @@
 ---
-layout: splash
-classes:
-  - landing
-  - dark-theme
+layout: page-full-width
+title: "Coming Soon"
+description: "Exciting new products and features in development."
 ---
+
+# Coming Soon
 
 Ranch Hand Robotics is developing robots based on ROS 2 which are designed to work in farms, fields and forests.  Our robots are designed to be easy to build, customize and repair.  
 

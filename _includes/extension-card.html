@@ -1,0 +1,75 @@
+<div class="extension-card">
+  <style>
+    .extension-card {
+      background: linear-gradient(135deg, rgba(45,50,60,1) 0%, rgba(35,40,50,1) 100%);
+      border: 1px solid rgba(76, 175, 80, 0.3);
+      border-radius: 12px;
+      padding: 1.5rem;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    .extension-card:hover {
+      transform: translateY(-8px);
+      border-color: rgba(76, 175, 80, 0.8);
+      box-shadow: 0 12px 24px rgba(76, 175, 80, 0.2);
+    }
+    .card-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    .card-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #4CAF50;
+      margin-bottom: 0.5rem;
+    }
+    .card-description {
+      color: rgba(255,255,255,0.8);
+      font-size: 0.95rem;
+      line-height: 1.5;
+      margin-bottom: 1rem;
+      flex-grow: 1;
+    }
+    .card-installs {
+      font-size: 0.85rem;
+      color: rgba(76, 175, 80, 0.9);
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+    .card-button {
+      display: inline-block;
+      background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      text-align: center;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      border: none;
+      cursor: pointer;
+    }
+    .card-button:hover {
+      background: linear-gradient(135deg, #45a049 0%, #3d8b40 100%);
+      transform: translateX(4px);
+    }
+  </style>
+
+  {% if include.screenshot %}
+    <img src="{{ include.screenshot }}" alt="{{ include.title }}" class="card-image">
+  {% endif %}
+  
+  <h3 class="card-title">{{ include.title }}</h3>
+  {% if include.installs %}
+    <div class="card-installs">{{ include.installs }} Installs</div>
+  {% endif %}
+  <p class="card-description">{{ include.desc }}</p>
+  
+  <a href="{{ include.link }}" class="card-button" target="_blank" rel="noopener noreferrer">View Extension →</a>
+</div>

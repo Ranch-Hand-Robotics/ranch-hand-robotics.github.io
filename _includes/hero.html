@@ -1,0 +1,112 @@
+<div class="hero-container" style="background: linear-gradient(135deg, rgba(34,40,49,0.8) 0%, rgba(68,80,94,0.8) 100%), url('/assets/img/hero-robot-field.jpg') center/cover; color: white; padding: 160px 20px; text-align: center; position: relative; overflow: hidden;">
+  <style>
+    .hero-container {
+      animation: heroGradient 8s ease infinite;
+    }
+    @keyframes heroGradient {
+      0%, 100% { background-color: rgba(34,40,49,0.8); }
+      50% { background-color: rgba(76,110,82,0.85); }
+    }
+    .hero-container h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 800;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+      letter-spacing: -0.5px;
+    }
+    .hero-container p {
+      font-size: clamp(1rem, 2.5vw, 1.3rem);
+      margin-bottom: 2rem;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.6;
+    }
+    .hero-cta-group {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+    .btn-hero {
+      padding: 14px 32px;
+      font-size: 1rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    .btn-primary-hero {
+      background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+      color: white;
+    }
+    .btn-primary-hero:hover {
+      background: linear-gradient(135deg, #45a049 0%, #3d8b40 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(76, 175, 80, 0.4);
+    }
+    .btn-secondary-hero {
+      background: rgba(255,255,255,0.15);
+      color: white;
+      border: 2px solid rgba(255,255,255,0.5);
+    }
+    .btn-secondary-hero:hover {
+      background: rgba(255,255,255,0.25);
+      border-color: rgba(255,255,255,0.8);
+      transform: translateY(-2px);
+    }
+    .hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      margin-top: 3rem;
+      flex-wrap: wrap;
+    }
+    .stat-item {
+      background: rgba(255,255,255,0.1);
+      padding: 1.5rem 2rem;
+      border-radius: 8px;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    .stat-number {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #4CAF50;
+    }
+    .stat-label {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.8);
+      margin-top: 0.5rem;
+    }
+  </style>
+
+  <h1>Build Robots That Conquer Mud, Not Just Code</h1>
+  <p>100k+ devs use our free AI-powered extensions for VS Code & Cursor. Real hardware for farms, fields, forests. Edge orchestration, ATAK control, mesh comms, cyberdecks—bootstrapped independently.</p>
+  
+  <div class="hero-cta-group">
+    <a href="https://marketplace.visualstudio.com/items?itemName=Ranch-Hand-Robotics.rde-pack" class="btn-hero btn-primary-hero">⚡ Install RDE Pack Free (400k+ Installs)</a>
+    <a href="https://www.youtube.com/@rh_robotics" class="btn-hero btn-secondary-hero">▶ Watch Robot Builds</a>
+  </div>
+
+  <div class="hero-stats">
+    <div class="stat-item">
+      <div class="stat-number">101k+</div>
+      <div class="stat-label">Extension Installs</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">3</div>
+      <div class="stat-label">Hardware Platforms</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number">∞</div>
+      <div class="stat-label">Bootstrapped Grit</div>
+    </div>
+  </div>
+</div>

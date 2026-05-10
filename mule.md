@@ -1,8 +1,7 @@
 ---
-layout: splash
-classes:
-  - landing
-  - dark-theme
+layout: page-full-width
+title: "Mule – All-Terrain Carrier Robot"
+description: "Heavy-duty cargo platform for autonomous payload delivery in rough terrain. ROS 2 integrated, mesh network ready."
 ---
 
 # Mule

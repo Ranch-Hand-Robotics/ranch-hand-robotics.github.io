@@ -1,9 +1,10 @@
 ---
-layout: splash
-classes:
-  - landing
-  - dark-theme
+layout: page-full-width
+title: "Sheepdog – Scout Robot Platform"
+description: "Lightweight outdoor robot for surveying, mapping, and reconnaissance. Open-source hardware designed for harsh environments."
 ---
+
+# Sheepdog
 
 Sheepdog is an Open-Source small wheeled robot designed to work in outdoor environments or confined indoor environments. 
 

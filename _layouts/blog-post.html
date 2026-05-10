@@ -1,0 +1,301 @@
+---
+layout: single
+author_profile: false
+---
+
+<style>
+.page {
+  max-width: 850px;
+}
+
+.page-title {
+  font-size: 2.2rem;
+  color: #4CAF50;
+  margin-bottom: 0.5rem;
+  font-weight: 800;
+}
+
+.post-meta {
+  display: flex;
+  gap: 2rem;
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.82);
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.post-meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.post-tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.post-meta-category,
+.post-tag {
+  display: inline-block;
+  background: rgba(76, 175, 80, 0.2);
+  color: #4CAF50;
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.post-tags-list a {
+  background: rgba(76, 175, 80, 0.2);
+  color: #4CAF50;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.post-tags-list a:hover {
+  background: rgba(76, 175, 80, 0.4);
+  color: #66BB6A;
+}
+
+.page-content {
+  line-height: 1.8;
+  color: rgba(255,255,255,0.9);
+}
+
+.page-content h2 {
+  font-size: 1.6rem;
+  color: #4CAF50;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid rgba(76, 175, 80, 0.3);
+  padding-bottom: 0.5rem;
+}
+
+.page-content h3 {
+  font-size: 1.3rem;
+  color: #66BB6A;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.page-content code {
+  background: rgba(0,0,0,0.3);
+  color: #4CAF50;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-family: monospace;
+}
+
+.page-content pre {
+  background: rgba(0,0,0,0.5);
+  border-left: 4px solid #4CAF50;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-size: 0.9rem;
+  margin: 1.5rem 0;
+}
+
+.page-content pre code {
+  background: none;
+  color: #4CAF50;
+  padding: 0;
+  border-radius: 0;
+}
+
+.page-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+.page-content table th {
+  background: rgba(76, 175, 80, 0.2);
+  color: #4CAF50;
+  padding: 0.8rem;
+  text-align: left;
+  font-weight: 600;
+  border-bottom: 2px solid rgba(76, 175, 80, 0.4);
+}
+
+.page-content table td {
+  padding: 0.8rem;
+  border-bottom: 1px solid rgba(76, 175, 80, 0.2);
+}
+
+.page-content table tr:hover {
+  background: rgba(76, 175, 80, 0.05);
+}
+
+.page-content strong {
+  color: #66BB6A;
+}
+
+.page-content a {
+  color: #4CAF50;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.page-content a:hover {
+  color: #66BB6A;
+}
+
+.page-content blockquote {
+  border-left: 4px solid #4CAF50;
+  padding-left: 1rem;
+  color: rgba(255,255,255,0.85);
+  margin: 1.5rem 0;
+  font-style: italic;
+}
+
+.page-content a:focus-visible,
+.post-nav-item:focus-visible,
+.post-cta-link:focus-visible {
+  outline: 3px solid #8fd694;
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+.post-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(76, 175, 80, 0.2);
+}
+
+.post-nav-item {
+  flex: 1;
+  background: rgba(76, 175, 80, 0.1);
+  padding: 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  color: inherit;
+}
+
+.post-nav-item:hover {
+  background: rgba(76, 175, 80, 0.2);
+  transform: translateY(-2px);
+}
+
+.post-cta-link {
+  display: inline-block;
+  background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+  color: white;
+  padding: 12px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.post-cta-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(76, 175, 80, 0.4);
+}
+
+.post-nav-label {
+  font-size: 0.85rem;
+  color: #4CAF50;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.post-nav-title {
+  color: white;
+  font-weight: 600;
+}
+</style>
+
+<article class="page" itemscope itemtype="https://schema.org/BlogPosting">
+  <h1 class="page-title" itemprop="headline">{{ page.title }}</h1>
+
+  <div class="post-meta">
+    <div class="post-meta-item">📅 {{ page.date | date: "%B %d, %Y" }}</div>
+    {% if page.categories %}
+      <div class="post-meta-item">
+        📚
+        {% for category in page.categories %}
+          <span class="post-meta-category">{{ category }}</span>{% if forloop.last == false %} {% endif %}
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+
+  {% if page.tags %}
+    <div class="post-tags-list">
+      {% for tag in page.tags %}
+        <span class="post-tag">#{{ tag }}</span>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  <div class="page-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+</article>
+
+<div class="post-nav">
+  {% if page.previous.url %}
+    <a href="{{ page.previous.url }}" class="post-nav-item" rel="prev">
+      <div class="post-nav-label">← Previous</div>
+      <div class="post-nav-title">{{ page.previous.title }}</div>
+    </a>
+  {% else %}
+    <div style="flex: 1;"></div>
+  {% endif %}
+
+  {% if page.next.url %}
+    <a href="{{ page.next.url }}" class="post-nav-item" rel="next">
+      <div class="post-nav-label">Next →</div>
+      <div class="post-nav-title">{{ page.next.title }}</div>
+    </a>
+  {% endif %}
+</div>
+
+<style>
+  #article-footer {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(76, 175, 80, 0.2);
+  }
+  
+  .post-cta {
+    background: linear-gradient(135deg, rgba(76, 175, 80, 0.15) 0%, rgba(0, 212, 255, 0.1) 100%);
+    border: 2px solid rgba(76, 175, 80, 0.5);
+    border-radius: 8px;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .post-cta h3 {
+    color: #4CAF50;
+    margin-top: 0;
+  }
+  
+  .post-cta p {
+    color: rgba(255,255,255,0.8);
+    margin: 0 0 1.5rem 0;
+  }
+</style>
+
+<div id="article-footer">
+  <div class="post-cta">
+    <h3>🚀 Ready to Build?</h3>
+    <p>Get started with Ranch Hand Robotics today. Install RDE Pack and join 100k+ robot developers.</p>
+    <a href="https://marketplace.visualstudio.com/items?itemName=Ranch-Hand-Robotics.rde-pack" class="post-cta-link">
+      Install RDE Pack Free →
+    </a>
+  </div>
+</div>

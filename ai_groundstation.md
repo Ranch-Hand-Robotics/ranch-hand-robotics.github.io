@@ -1,9 +1,10 @@
 ---
-layout: splash
-classes:
-  - landing
-  - dark-theme
+layout: page-full-width
+title: "AI Ground Station"
+description: "Centralized control hub for robot fleets with real-time telemetry, AI-assisted decision making, and field deployment."
 ---
+
+# AI Ground Station
 
 # AI Ground Station
 

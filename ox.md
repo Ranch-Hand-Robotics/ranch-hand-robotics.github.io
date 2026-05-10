@@ -1,9 +1,10 @@
 ---
-layout: splash
-classes:
-  - landing
-  - dark-theme
+layout: page-full-width
+title: "Ox – Industrial Workhorse Robot"
+description: "Rugged multi-purpose platform for farm automation, forestry operations, and heavy construction work."
 ---
+
+# Ox
 
 Ox is an Open-Source large robot designed to work in a harsh outdoor environments. 
 

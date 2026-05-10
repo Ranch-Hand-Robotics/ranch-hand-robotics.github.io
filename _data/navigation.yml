@@ -1,5 +1,13 @@
 main:
-  - title: "Contact Us"
-    url: /contact/
+  - title: "Extensions"
+    url: /#extensions
+  - title: "Hardware"
+    url: /#hardware
+  - title: "Advanced"
+    url: /#advanced
+  - title: "Blog"
+    url: /blog/
+  - title: "Sponsor"
+    url: /#sponsor
   - title: "About"
     url: /about/
