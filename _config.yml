@@ -21,7 +21,7 @@
 title: Ranch Hand Robotics – AI-Powered Tools & Robots for Farms, Fields, Forests
 email: contact@ranchhandrobotics.com
 description: >-
-  Free VS Code/Cursor extensions for robot devs: digital twins, distributed debugging, AI bootstrapping. Plus real outdoor hardware, edge orchestrators, ATAK plugins, mesh nets, and cyberdecks.
+  Free robot developer tools for VS Code and compatible editors. Explore outdoor robot concepts, off-grid communications, and field control stations—and help support independent robotics development.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.ranchhandrobotics.com" # the base hostname & protocol for your site, e.g. http://example.com
 footer: "© 2025 Ranch Hand Robotics, LLC | Proudly bootstrapped in Seattle"
@@ -68,9 +68,9 @@ navigation:
     url: "/"
   - title: "Extensions"
     url: "/#extensions"
-  - title: "Hardware"
-    url: "/#hardware"
-  - title: "Advanced Projects"
+  - title: "Available Today"
+    url: "/#available"
+  - title: "Sponsor Preview"
     url: "/#advanced"
   - title: "Blog"
     url: "/blog/"
@@ -156,14 +156,24 @@ whitelist:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - .env
+  - .env.*
+  - "*.env"
+  - "*.pem"
+  - "*.key"
+  - .bundle
+  - .git
+  - .sass-cache
+  - .jekyll-cache
+  - .jekyll-metadata
+  - .git-metadata
+  - .github
+  - .vscode
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - SECURITY.md
+  - docs
+  - node_modules
+  - vendor

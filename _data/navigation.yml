@@ -1,9 +1,9 @@
 main:
   - title: "Extensions"
     url: /#extensions
-  - title: "Hardware"
-    url: /#hardware
-  - title: "Advanced"
+  - title: "Available Today"
+    url: /#available
+  - title: "Sponsor Preview"
     url: /#advanced
   - title: "Blog"
     url: /blog/

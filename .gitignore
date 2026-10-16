@@ -6,4 +6,10 @@ vendor
 .bundle
 .git-metadata
 
+.env
+.env.*
+*.env
+*.pem
+*.key
+
 .vscode/*
