@@ -11,7 +11,18 @@ Ranch Hand Robotics is a solo-founder venture based in Washington State, USA, st
 - [YouTube](https://www.youtube.com/@rh_robotics): follow the builds.
 - [Discord](https://discord.gg/gBNNC3vbwY): share ideas and feedback.
 
+## Local development
+
+With Ruby 3.3 and Bundler 2.3.5 installed, run:
+
+```sh
+bundle install
+bundle exec jekyll serve
+```
+
+To build without starting a server, run `bundle exec jekyll build`.
+The lockfile supports both ARM64 and x86-64 Linux, plus the portable Ruby platform.
+
 ## Help build what's next
 
 [GitHub Sponsors](https://github.com/sponsors/ranch-hand-robotics) helps cover open-source development, robotics hardware, and running costs. Start at $5 a month, or choose a one-time contribution. Sponsorship supports the overall effort, not a product preorder or a promised release date.
-
