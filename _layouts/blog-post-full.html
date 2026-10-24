@@ -1,0 +1,402 @@
+---
+layout: default
+---
+
+<style>
+  /* Full-width blog layout */
+  .blog-full-width {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .blog-wrapper {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 60px 20px;
+  }
+
+  /* Content backdrop for readability */
+  .blog-backdrop {
+    background: linear-gradient(135deg, rgba(34, 40, 49, 0.88) 0%, rgba(45, 50, 60, 0.88) 100%);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    margin: 0;
+    padding: 4rem;
+    width: 100%;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+  }
+
+  @media (max-width: 768px) {
+    .blog-wrapper {
+      padding: 40px 15px;
+    }
+
+    .blog-backdrop {
+      padding: 2rem;
+      border-radius: 12px;
+    }
+  }
+
+  /* Override theme breakpoints that interfere with layout */
+  @media (min-width: 64em) {
+    .blog-wrapper {
+      width: 100%;
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    .blog-backdrop {
+      width: 100%;
+      margin: 0;
+      padding: 4rem;
+    }
+
+    .blog-content {
+      width: 100% !important;
+      max-width: 100% !important;
+      float: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+
+    /* Override .page styles from theme */
+    .blog-full-width .page {
+      float: none !important;
+      width: 100% !important;
+      padding-right: 0 !important;
+    }
+
+    .blog-full-width .page__inner-wrap {
+      float: none !important;
+      width: 100% !important;
+    }
+
+    .blog-full-width .page__content {
+      float: none !important;
+      width: 100% !important;
+    }
+  }
+
+  @media (min-width: 80em) {
+    .blog-wrapper {
+      width: 100%;
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 60px 40px;
+    }
+
+    .blog-backdrop {
+      width: 100%;
+      margin: 0;
+      padding: 4rem;
+    }
+
+    .blog-content {
+      width: 100% !important;
+      max-width: 100% !important;
+      float: none !important;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+
+    /* Override .page styles from theme */
+    .blog-full-width .page {
+      float: none !important;
+      width: 100% !important;
+      padding-right: 0 !important;
+    }
+
+    .blog-full-width .page__inner-wrap {
+      float: none !important;
+      width: 100% !important;
+    }
+
+    .blog-full-width .page__content {
+      float: none !important;
+      width: 100% !important;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .blog-wrapper {
+      padding: 60px 40px;
+    }
+
+    .blog-backdrop {
+      padding: 4rem;
+      border-radius: 16px;
+    }
+  }
+
+  .blog-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Blog-specific typography */
+  .blog-content h1 {
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    font-weight: 900;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  }
+
+  .blog-content h2 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 800;
+    margin-top: 2.5rem;
+    margin-bottom: 1.2rem;
+    color: #4CAF50;
+  }
+
+  .blog-content h3 {
+    font-size: clamp(1.2rem, 3vw, 1.6rem);
+    font-weight: 700;
+    margin-top: 1.8rem;
+    margin-bottom: 0.9rem;
+    color: #66BB6A;
+  }
+
+  @media (min-width: 1400px) {
+    .blog-content h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+    }
+
+    .blog-content h2 {
+      font-size: clamp(1.5rem, 2.5vw, 2rem);
+    }
+  }
+
+  .blog-content p,
+  .blog-content li {
+    font-size: clamp(1rem, 1.1vw, 1.05rem);
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 1.5rem;
+  }
+
+  .blog-content ul,
+  .blog-content ol {
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .blog-content li {
+    margin-bottom: 0.8rem;
+  }
+
+  .blog-content strong {
+    color: #66BB6A;
+    font-weight: 700;
+  }
+
+  .blog-content em {
+    color: #4CAF50;
+    font-style: italic;
+  }
+
+  .blog-content code {
+    background: rgba(68, 80, 94, 0.8);
+    color: #66BB6A;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Monaco', 'Courier New', monospace;
+    font-size: 0.95em;
+  }
+
+  .blog-content pre {
+    background: rgba(20, 25, 30, 0.9);
+    border: 1px solid rgba(76, 175, 80, 0.3);
+    border-radius: 8px;
+    padding: 1.5rem;
+    overflow-x: auto;
+    margin: 1.5rem 0;
+  }
+
+  .blog-content pre code {
+    background: none;
+    color: #66BB6A;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .blog-content blockquote {
+    border-left: 4px solid #4CAF50;
+    padding-left: 1.5rem;
+    margin: 1.5rem 0;
+    color: rgba(255, 255, 255, 0.8);
+    font-style: italic;
+  }
+
+  .blog-content a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    border-bottom: 1px solid transparent;
+  }
+
+  .blog-content a:hover {
+    color: #66BB6A;
+    border-bottom-color: #66BB6A;
+  }
+
+  .blog-meta {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(76, 175, 80, 0.2);
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .blog-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .blog-meta-label {
+    color: #4CAF50;
+    font-weight: 600;
+  }
+
+  .blog-tags {
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(76, 175, 80, 0.2);
+  }
+
+  .blog-tag {
+    display: inline-block;
+    background: rgba(76, 175, 80, 0.15);
+    color: #66BB6A;
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1px solid rgba(76, 175, 80, 0.3);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+  }
+
+  .blog-tag:hover {
+    background: rgba(76, 175, 80, 0.3);
+    border-color: #66BB6A;
+  }
+
+  /* Hide default page elements */
+  .page-title {
+    display: none;
+  }
+
+  .page {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .page__inner-wrap {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  article.page {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .page__content {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .page__content h2 {
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-weight: 800;
+    margin-top: 2.5rem;
+    margin-bottom: 1.2rem;
+    color: #4CAF50;
+  }
+
+  .page__content h3 {
+    font-size: clamp(1.2rem, 3vw, 1.6rem);
+    font-weight: 700;
+    margin-top: 1.8rem;
+    margin-bottom: 0.9rem;
+    color: #66BB6A;
+  }
+
+  .page__content p,
+  .page__content li {
+    font-size: clamp(1rem, 1.1vw, 1.05rem);
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 1.5rem;
+  }
+
+  .wide {
+    max-width: 100%;
+  }
+
+  .author-profile {
+    display: none;
+  }
+</style>
+
+<div class="blog-full-width">
+  <div class="blog-wrapper">
+    <div class="blog-backdrop">
+      <div class="blog-content">
+        <article class="page">
+          {% if page.title %}
+            <h1 class="page__title">{{ page.title }}</h1>
+          {% endif %}
+
+          {% if page.date or page.categories %}
+            <div class="blog-meta">
+              {% if page.date %}
+                <div class="blog-meta-item">
+                  <span class="blog-meta-label">📅 Date:</span>
+                  <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+                </div>
+              {% endif %}
+              {% if page.categories %}
+                <div class="blog-meta-item">
+                  <span class="blog-meta-label">📂 Category:</span>
+                  <span>{{ page.categories | join: ", " }}</span>
+                </div>
+              {% endif %}
+            </div>
+          {% endif %}
+
+          <div class="page__content">
+            {{ content }}
+          </div>
+
+          {% if page.tags %}
+            <div class="blog-tags">
+              {% for tag in page.tags %}
+                <a href="/blog/tag/{{ tag | downcase | replace: ' ', '-' }}/" class="blog-tag">#{{ tag }}</a>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </article>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,24 +1,32 @@
 ---
-layout: splash
-classes:
-  - landing
-  - dark-theme
+layout: page-full-width
+title: "Sheepdog – Scout Robot Platform"
+description: "A lightweight scout robot concept for property monitoring and sensor payloads. Explore the design goals and help support independent robotics development."
 ---
 
-Sheepdog is an Open-Source small wheeled robot designed to work in outdoor environments or confined indoor environments. 
+# Sheepdog
 
-Features:
-- Operate as a remote control robot, or as an autonomous robot.
-- Carry a small payload, such as optical or thermal cameras.
-- Built in Wifi Repeater, to extend the range of your Wifi network.
-- Navigate around a farm environment, avoiding obstacles and following a path or region using GPS-RTK and optical positioning.
-- Communicate with other robots and share its understanding of the environment and coordinate operations.
-- Built in GPS and optical positioning.
-- Wireless Charging with docking station.
-- Safety features include emergency stop, obstacle avoidance, and remote monitoring.
-- Add an extendable arm for light lifting tasks.
-- Implement a user-friendly interface for easy operation and monitoring of robot tasks.
+A small scout for a big property. Sheepdog is an open-source, lightweight wheeled robot concept for routine scouting, homestead monitoring, and carrying cameras or sensors outdoors or in confined indoor spaces.
 
->NOTE: Coming soon, the Sheepdog is currently in development.
+Imagine sending a camera down a familiar route while you focus on the next job. That's the direction—not a capability available to order today.
 
-![Sheepdog](/assets/images/rhr.jpg)
+> **Status:** On the roadmap. The capabilities below are design goals, not confirmed specifications, and may change as development progresses.
+
+## Design goals
+
+- Remote-controlled and autonomous operation with an easy-to-use monitoring interface.
+- Small sensor payloads, including optical or thermal cameras.
+- A built-in Wi-Fi repeater to extend local network coverage.
+- GPS-RTK and optical positioning for route following and obstacle avoidance.
+- Communication with other robots to share observations and coordinate tasks.
+- Wireless charging with a docking station.
+- An optional extendable arm for light lifting.
+- Emergency stop and remote monitoring alongside obstacle avoidance.
+
+## Help build what's next
+
+Interested in a practical scout for outdoor work? Sponsorship helps fund open-source development, robotics hardware, and the experiments behind the roadmap. Contributions support the overall Ranch Hand Robotics effort, not a Sheepdog preorder or a promised release date.
+
+[Become a sponsor on GitHub](https://github.com/sponsors/ranch-hand-robotics){: .btn .btn--primary}
+
+[Explore the other robot concepts](/comingsoon.html) or [follow the builds on YouTube](https://www.youtube.com/@rh_robotics).
