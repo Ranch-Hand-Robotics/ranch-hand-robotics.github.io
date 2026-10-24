@@ -235,7 +235,7 @@ permalink: /
 
 <div class="full-width-section footer-section">
   <div class="content-wrapper">
-    <p>Ranch Hand Robotics, LLC is a solo-founder venture based in Washington State, USA, started in 2024. No corporate backing or venture capital—just practical tools, open-source projects, and a passion for robots that help outdoors. Follow the builds on <a href="https://x.com/rh_robotics">𝕏 @rh_robotics</a> and <a href="https://www.youtube.com/@rh_robotics">▶ YouTube</a>, or join the conversation on <a href="https://discord.gg/gBNNC3vbwY">💬 Discord</a>.</p>
+    <p>Ranch Hand Robotics, LLC is a solo-founder venture based in Washington State, USA, started in 2024. No corporate backing or venture capital—just practical tools, open-source projects, and a passion for robots that help outdoors. Follow the builds on <a href="https://x.com/rh_robotics">𝕏 @rh_robotics</a> and <a href="https://www.youtube.com/@rh_robotics">▶ YouTube</a>.</p>
   </div>
 </div>
 
